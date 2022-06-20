@@ -1,4 +1,5 @@
 def FizzBuzz(start: int, end: int) -> None:
+    
     '''
     FizzBuzz program.
     :param start:
