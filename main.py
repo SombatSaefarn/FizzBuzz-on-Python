@@ -10,6 +10,7 @@ def FizzBuzz(start: int, end: int) -> None:
     print "i Fizz if" i is divisable by 3
     print "i Buzz if" i is divisable by 5
     '''
+    
     for i in range(start, end + 1):
         print(i, end = " ")
         if i % 3 == 0 and i % 5 == 0:
