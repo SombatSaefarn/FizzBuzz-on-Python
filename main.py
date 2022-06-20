@@ -1,31 +1,27 @@
-#making a function called FizzBuzz
 def FizzBuzz(
-    #starting range variable
     start: int,
-    #ending range variable
-    end: int,)-> None: #specifying that this function will return None
-    #starting for loop starting with the variable start and end with end variable and assign variable called i
-    for i in range(
-            #starting range variable
-            start,
-            #ending range variable + 1
-            end+1,
-            ):
-        #if i variable is dividable by 3 and 5 without leaving no remainders
+    end: int
+    ) -> None:
+    '''
+    FizzBuzz program.
+    :param start:
+    :param end:
+    :return None:
+
+    on the printing process
+    print "i FizzBuzz" if i is divisable by 3 and 5
+    print "i Fizz if" i is divisable by 3
+    print "i Buzz if" i is divisable by 5
+    '''
+    for i in range(start, end + 1):
+        print(i, end = " ")
         if i % 3 == 0 and i % 5 == 0:
-            #printing "i FizzBuzz" if the condition is True
-            print(f"{i} FizzBuzz")
-        #else if i is dividable by 3 without leaving no remainders
+            print('Fizz Buzz')
         elif i % 3 == 0:
-            #print "i Fizz" if the codition is True
-            print(f"{i} Fizz")
-        #else if i is dividable by 5 without leaving no remainders
+            print('Fizz')
         elif i % 5 == 0:
-            #print "i Buzz" if the codition is True
-            print(f"{i} Buzz")
-        #else
+            print('Buzz')
         else:
-            #print i if the no conditions are True
-            print(f"{i}")
-#calling the function FizzBuzz and has 1 as start arguement, 100 as end arguement
-FizzBuzz(1,100)
+            print()
+
+FizzBuzz(1,20)
