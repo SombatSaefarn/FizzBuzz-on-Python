@@ -4,7 +4,6 @@ def FizzBuzz(
     start: int,
     #ending range variable
     end: int,)-> None: #specifying that this function will return None
-    print(start)
     #starting for loop starting with the variable start and end with end variable and assign variable called i
     for i in range(
             #starting range variable
